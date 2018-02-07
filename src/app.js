@@ -10,15 +10,8 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
 const store = configureStore();
-
-store.dispatch(addExpense({ title:'gsdgstw', description: 'Water bill', city:'fsafas', adress:'fdsgs', amount: 4500 }));
-store.dispatch(addExpense({title: 'gsdge643gstw', description: 'Gas bill', city: 'fsafas', adress: 'fdsgs', createdAt: 1000}));
-store.dispatch(addExpense({title: 'fsd', description: 'Rent', city: 'fsafas', adress: 'fdsgs', amount: 109500}));
-
-const state = store.getState();
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-console.log(visibleExpenses);
-
+ 
+console.log('fdgdfg');
 const jsx = (
   <Provider store={store}>
     <AppRouter />
